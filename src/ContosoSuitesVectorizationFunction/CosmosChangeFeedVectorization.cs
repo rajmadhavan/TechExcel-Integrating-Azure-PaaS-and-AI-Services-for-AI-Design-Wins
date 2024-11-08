@@ -53,7 +53,7 @@ namespace ContosoSuites.Functions
         public object Run([CosmosDBTrigger(
             databaseName: DatabaseName,
             containerName: ContainerName,
-            Connection = "CosmosDBConnectionString",
+            Connection = "CosmosDBConnectionString",            
             LeaseContainerName = "leases",
             CreateLeaseContainerIfNotExists = true)] IReadOnlyList<MaintenanceRequest> input)
         {
